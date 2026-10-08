@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Headphone Product</title>
+
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            background-color: #f2f2f2;
+        }
+
+        .box {
+            width: 500px;
+            height: 650px;
+
+            background-color: white;
+            border: 2px solid grey;
+
+            display: flex;
+            flex-direction: column;
+        }
+        .image-section {
+            height: 50%;
+            position: relative;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .headphone {
+            width: 80%;
+            height: 80%;
+            object-fit: contain;
+        }
+        .badge {
+        position: absolute;
+        top: 15px;
+        left: 15px;
+
+        background-color: orange;
+        color: white;
+
+        padding: 8px 18px;
+        border-radius: 5px;
+
+        font-size: 14px;
+        font-weight: bold;
+    }
+        .details {
+            height: 50%;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        .details h2 {
+            margin: 10px 0;
+        }
+
+        .price {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .cart-button {
+            width: 100%;
+            padding: 15px;
+
+            background-color: yellow;
+            color:black;
+
+            border: none;
+            border-radius: 5px;
+
+            font-size: 18px;
+            cursor: pointer;
+
+            
+        }
+
+        .cart-button:hover {
+            background-color: grey;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="box">
+        <div class="image-section">
+            <div class="badge">
+        BEST SELLER
+            </div>
+            <img src="https://m.media-amazon.com/images/I/61RahTQtAqL.jpg" class="headphone" alt="Headphones">
+        </div>
+        <div class="details">
+
+            <h2>Wireless Headphones</h2>
+
+            <p>Premium wireless headphones with noise cancellation.</p>
+
+            <p>⭐⭐⭐⭐⭐</p>
+
+            <p class="price">₹2,499</p>
+
+            <button class="cart-button" >
+                Add to Cart
+            </button>
+
+        </div>
+
+    </div>
+
+</body>
+</html>

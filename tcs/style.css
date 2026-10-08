@@ -1,0 +1,153 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    min-height: 100%;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f5f5f5;
+    padding: 30px;
+    overflow: hidden;
+}
+
+.cards-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 25px;
+    width: 100%;
+}
+
+.card {
+    width: 350px;
+    height: 630px;
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    flex-shrink: 0;
+}
+
+.header {
+    background: #286bb9;
+    color: white;
+    padding: 15px 20px;
+    font-size: 18px;
+    font-weight: bold;
+    flex-shrink: 0;
+}
+
+.content {
+    flex: 1;
+    min-height: 0;
+    overflow: hidden;
+}
+
+.scroll-content {
+    height: 100%;
+    overflow-y: auto;
+    overflow-x: hidden;
+    padding: 25px 20px;
+}
+
+.scroll-content p {
+    font-size: 15px;
+    line-height: 1.6;
+    color: #333;
+    margin-bottom: 22px;
+}
+
+.scroll-content h3 {
+    font-size: 15px;
+    font-weight: normal;
+    color: #333;
+    margin-bottom: 12px;
+}
+
+.scroll-content ul {
+    padding-left: 22px;
+}
+
+.scroll-content li {
+    font-size: 14px;
+    line-height: 1.5;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.price {
+    margin-top: 25px;
+    margin-bottom: 3px;
+}
+
+.new-price {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.old-price {
+    font-size: 18px;
+    margin-left: 15px;
+    text-decoration: line-through;
+    color: #555;
+}
+
+.tax {
+    font-size: 11px;
+    color: #286bb9;
+}
+
+.know-more {
+    margin-top: 20px;
+}
+
+.buttons {
+    height: 80px;
+    padding: 15px;
+    display: flex;
+    gap: 10px;
+    background: white;
+    flex-shrink: 0;
+}
+
+.buttons button {
+    flex: 1;
+    height: 50px;
+    border-radius: 25px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.activate {
+    background: white;
+    color: #286bb9;
+    border: 1px solid #286bb9;
+}
+
+.buy {
+    background: #286bb9;
+    color: white;
+    border: 1px solid #286bb9;
+}
+
+.scroll-content::-webkit-scrollbar {
+    width: 6px;
+}
+
+.scroll-content::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+.scroll-content::-webkit-scrollbar-thumb {
+    background: #999;
+    border-radius: 10px;
+}
